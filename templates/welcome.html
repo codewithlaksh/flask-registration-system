@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block title %}Welcome - {{ session["user"] }}{% endblock title %}
+
+{% block body %}
+            <h2 class="text-center">Welcome - {{ session["user"] }}</h2>
+            <p><a href="/logout" class="text-dark">Logout</a></p>
+{% endblock body %}

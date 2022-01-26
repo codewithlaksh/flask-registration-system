@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}Login{% endblock title %}
+
+{% block body %}
+            <h2 class="text-center">Login</h2>
+            <form action="/handlelogin" method="post">
+                <div class="mb-3">
+                    <label for="uname">Username</label>
+                    <input type="text" class="form-control" name="uname" placeholder="Enter an unique username" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" name="password" placeholder="Choose a password" required>
+                </div>
+                <button class="btn btn-secondary" type="submit">Login</button>
+            </form>
+            <hr>
+            <p><a href="/" class="text-dark">Not registered yet? Signup Here</a></p>
+{% endblock body %}
